@@ -1,0 +1,15 @@
+.size {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.sortButton {
+    display: none;
+    float: right;
+    padding: 0;
+}
+
+.searchBar {
+    display: none;
+}
