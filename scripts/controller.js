@@ -263,12 +263,22 @@ function searchText() {
     let tasks;
     if (text=='') {
         tasks = TODO_OPERATIONS.getTasks();
+        printTable(tasks);
+        modal("All Records Loaded","");
+        document.querySelector('#searchbar').focus();
     }
     else {
         tasks = TODO_OPERATIONS.searchByName(text);
+        if (tasks.length!=0) {
+            printTable(tasks);
+            modal("Success",`${tasks.length} Record(s) found.`);
+        }
+        else {
+            modal("Error", "No Tasks Found with that Name");
+        }
     }
     
-    printTable(tasks);
+    
 }
 
 // Speech Recognition Implementation
