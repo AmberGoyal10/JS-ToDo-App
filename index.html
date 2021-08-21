@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDoApp</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2e961424d8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/design.css">
     <script src="./scripts/bootstrap.js"></script>
     <script src='./scripts/models/todo.js'></script>
     <script src='./scripts/models/operations.js'></script>
-    <script src='./scripts/controller.js'></script>
+    <script src='./scripts/controller.js' defer></script>
 </head>
 <body>
     <!-- Modal -->
@@ -62,10 +63,10 @@
             <button class="btn btn-danger" id="delete">Delete</button>
             <button class="btn btn-warning" id="update" data-bs-toggle="modal" data-bs-target="#mainModal">Update</button>
             <button class="btn btn-info" id="search">Search</button> 
-            <div class="searchBar " id='searchbar'>
+            <div class="searchBar" id='searchbar'>
                 <input type="text" id='seacrhTextbox' placeholder="Type Task Name To Search"/>
                 <img class="size" src='./assets/images/search.png' id='seacrhText'>
-                <img class="size" src="./assets/images/voice.jpg" id='voiceSearch'>
+                <!-- <img class="size" src="./assets/images/voice.jpg" id='voiceSearch'> -->
             </div>
             <button class="btn btn-info" id="sort">Sort</button>
             <button class="btn btn-success" id="save" data-bs-toggle="modal" data-bs-target="#mainModal">Save</button>

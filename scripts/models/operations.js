@@ -38,18 +38,18 @@ const TODO_OPERATIONS = {
     },
     sortd(col){
         if (col=='name') {
-            TODO_OPERATIONS.tasks.sort((first,second)=>first['name'].localeCompare(second['name']));
+            this.tasks.sort((first,second)=>first['name'].localeCompare(second['name']));
         }
         else {
-            TODO_OPERATIONS.tasks.sort((first,second)=>first[col]-second[col]);
+            this.tasks.sort((first,second)=>first[col]-second[col]);
         }
     },
     sorta(col){
         if (col=='name') {
-            TODO_OPERATIONS.tasks.sort((first,second)=>second['name'].localeCompare(first['name']));
+            this.tasks.sort((first,second)=>second['name'].localeCompare(first['name']));
         }
         else {
-            TODO_OPERATIONS.tasks.sort((first,second)=>second[col]-first[col]);
+            this.tasks.sort((first,second)=>second[col]-first[col]);
         }
     },
     read(){
